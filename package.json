@@ -1,0 +1,31 @@
+{
+  "name": "new-typescript-module",
+  "version": "0.17.0",
+  "main": "lib/index.js",
+  "description": "Creates a new ready typescript module package.",
+  "keywords": [
+    "generator",
+    "typescript",
+    "package"
+  ],
+  "author": "retueze",
+  "license": "ISC",
+  "bin": {
+    "new-typescript-module": "./lib/index.js"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "buildTsDev": "tsc -p tsconfig.dev.json",
+    "buildDev": "npm run buildTsDev",
+    "buildTsProd": "tsc -p tsconfig.prod.json",
+    "buildProd": "npm run buildTsProd",
+    "prepare": "del /q lib && del /q types && npm run buildProd",
+    "prestart": "npm run buildProd",
+    "start": "node lib/index"
+  },
+  "devDependencies": {
+    "@types/node": "14.14",
+    "@typescript-eslint/parser": "4.22",
+    "typescript": "4.2"
+  }
+}
