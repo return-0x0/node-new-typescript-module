@@ -42,6 +42,8 @@ const NEW_LINE = process.platform === 'win32' ? '\r\n' : '\n';
 fs.mkdirSync(directory);
 process.chdir(directory);
 fs.mkdirSync('src');
+fs.mkdirSync('lib');
+fs.mkdirSync('types');
 
 fs.writeFileSync('package.json', [
     '{',

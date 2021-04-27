@@ -25,6 +25,8 @@ Directory tree after call `npx new-typescript-module`:
 ├ .eslintrc
 ├ src
 │ └ index.ts
+├ lib
+├ types
 ├ node_modules
 │ └ ...
 └ .git
