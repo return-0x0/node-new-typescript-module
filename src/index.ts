@@ -60,7 +60,7 @@ fs.writeFileSync('package.json', [
     '\t\t"buildTsProd": "tsc -p tsconfig.prod.json",',
     '\t\t"buildProd": "npm run buildTsProd",',
     process.platform === 'win32'
-        ? '\t\t"prepare": "del /q lib && del /q types && npm run buildProd"'
+        ? '\t\t"prepare": "rd /s /q lib && rd /s /q types && npm run buildProd"'
         : '\t\t"prepare": "rm -r lib && rm -r types && npm run buildProd"',
     '\t}',
     '}'
