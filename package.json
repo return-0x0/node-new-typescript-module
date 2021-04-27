@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "new-typescript-module",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "main": "lib/index.js",
   "description": "Creates a new ready typescript module package.",
   "keywords": [
