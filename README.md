@@ -10,6 +10,8 @@
 npx new-typescript-module [<project-name>] [<project-directory>]
 ```
 
+**Recommendation.** If you want to update version of any NPX-utility like this you should use [`clear-npx-cache`](https://www.npmjs.com/package/clear-npx-cache) utility. More information in `clear-npx-cache`'s readme.
+
 Default `<project-name>` is `my-typescript-module`, default `<project-directory>` is `./<project-name>`.
 
 Directory tree after call `npx new-typescript-module`:
