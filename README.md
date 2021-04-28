@@ -58,7 +58,7 @@ git init
     "buildDev": "npm run buildTsDev",
     "buildTsProd": "tsc -p tsconfig.prod.json",
     "buildProd": "npm run buildTsProd",
-    "prepare": "del /q lib && del /q types && npm run buildProd"
+    "prepare": "rd /s /q lib && rd /s /q types && npm run buildProd"
     // or
     "prepare": "rm -r lib && rm -r types && npm run buildProd"
   },
