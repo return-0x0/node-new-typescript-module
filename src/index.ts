@@ -66,7 +66,7 @@ fs.writeFileSync('package.json', [
         : '\t\t"prepare": "rm -r lib && rm -r types && npm run buildProd"',
     '\t}',
     '}'
-].map(line => line.replace('\t', ' '.repeat(2))).join(NEW_LINE));
+].map(line => line.replace(/\t/g, ' '.repeat(2))).join(NEW_LINE));
 
 fs.writeFileSync('tsconfig.dev.json', [
     '{',
@@ -83,7 +83,7 @@ fs.writeFileSync('tsconfig.dev.json', [
     '\t\t"sourceMap": true',
     '\t}',
     '}'
-].map(line => line.replace('\t', ' '.repeat(4))).join(NEW_LINE));
+].map(line => line.replace(/\t/g, ' '.repeat(4))).join(NEW_LINE));
 
 fs.writeFileSync('tsconfig.prod.json', [
     '{',
@@ -99,7 +99,7 @@ fs.writeFileSync('tsconfig.prod.json', [
     '\t\t"strict": true',
     '\t}',
     '}'
-].map(line => line.replace('\t', ' '.repeat(4))).join(NEW_LINE));
+].map(line => line.replace(/\t/g, ' '.repeat(4))).join(NEW_LINE));
 
 fs.writeFileSync('.npmignore', [
     'src',
@@ -127,7 +127,7 @@ fs.writeFileSync('.eslintrc', [
     '\t\t"quotes": ["warn", "single"]',
     '\t}',
     '}'
-].map(line => line.replace('\t', ' '.repeat(4))).join(NEW_LINE));
+].map(line => line.replace(/\t/g, ' '.repeat(4))).join(NEW_LINE));
 
 fs.writeFileSync('README.md', '');
 fs.writeFileSync('src/index.ts', '');
