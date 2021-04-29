@@ -64,6 +64,10 @@ fs.writeFileSync('package.json', [
     process.platform === 'win32'
         ? '\t\t"prepare": "rd /s /q lib && rd /s /q types && npm run buildProd"'
         : '\t\t"prepare": "rm -r lib && rm -r types && npm run buildProd"',
+    '\t},',
+    '\t"devDependencies": {',
+    '\t\t"typescript": "^4.2",',
+    '\t\t"@typescript-eslint/parser": "^4.22"',
     '\t}',
     '}'
 ].map(line => line.replace(/\t/g, ' '.repeat(2))).join(NEW_LINE));

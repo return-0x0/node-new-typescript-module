@@ -70,8 +70,8 @@ git init
   },
   "devDependencies": {
     "@types/node": ...,
-    "@typescript-eslint/parser": ...,
-    "typescript": ...
+    "@typescript-eslint/parser": "^4.22",
+    "typescript": "^4.2"
   }
 }
 ```
