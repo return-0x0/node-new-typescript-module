@@ -47,6 +47,7 @@ fs.mkdirSync('types');
 
 fs.writeFileSync('package.json', [
     '{',
+    '\t"private": true,',
     `\t"name": "${projectName}",`,
     '\t"version": "1.0.0",',
     '\t"main": "lib/index.js",',
