@@ -47,6 +47,8 @@ npm i -D @types/node
 git init
 ```
 
+**Note.** `typescript` and `@typescript-eslint/parser` packages shall be added to `devDependencies` *after* `@types/node` installing. After this trick shall be installed locally only `@types/node`. If add thoose packages in `devDependencies` and *after* install `@types/node` then all packages shall be installed: `typescript`, `@typescript-eslint/parser`, and `@types/node`.
+
 ### `package.json`
 
 ```plain
