@@ -132,5 +132,5 @@ fs.writeFileSync('.eslintrc', [
 fs.writeFileSync('README.md', '');
 fs.writeFileSync('src/index.ts', '');
 
-execSync('npm i -D @types/node typescript @typescript-eslint/parser');
+execSync('npm i -D @types/node');
 execSync('git init');
