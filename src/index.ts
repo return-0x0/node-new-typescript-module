@@ -132,20 +132,5 @@ fs.writeFileSync('.eslintrc', [
 fs.writeFileSync('README.md', '');
 fs.writeFileSync('src/index.ts', '');
 
-execSync('npm i -D @types/node');
+execSync('npm i -D @types/node typescript @typescript-eslint/parser');
 execSync('git init');
-
-let package_json = JSON.parse(fs.readFileSync('package.json').toString());
-Object.defineProperty(package_json.devDependencies, 'typescript', {
-    value: '^4.2',
-    writable: true,
-    enumerable: true,
-    configurable: true
-});
-Object.defineProperty(package_json.devDependencies, '@typescript-eslint/parser', {
-    value: '^4.22',
-    writable: true,
-    enumerable: true,
-    configurable: true
-});
-fs.writeFileSync('package.json', JSON.stringify(package_json, null, '  '));

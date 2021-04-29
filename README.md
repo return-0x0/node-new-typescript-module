@@ -43,11 +43,11 @@ The `<project-directory>/.git` directory is hidden.
 Side calls (at `<project-directory>`):
 
 ```sh
-npm i -D @types/node
+npm i -D @types/node typescript @typescript-eslint/parser
 git init
 ```
 
-**Note.** `typescript` and `@typescript-eslint/parser` packages shall be added to `devDependencies` *after* `@types/node` installing. After this trick shall be installed locally only `@types/node`. If add thoose packages in `devDependencies` and *after* install `@types/node` then all packages shall be installed: `typescript`, `@typescript-eslint/parser`, and `@types/node`.
+**Note.** I don't know why ESLint don't support global packages. Yeap, when you created a new typescript module you shall install on your drive too many files thoose can be installed globally.
 
 ### `package.json`
 
@@ -72,8 +72,8 @@ git init
   },
   "devDependencies": {
     "@types/node": ...,
-    "@typescript-eslint/parser": "^4.22",
-    "typescript": "^4.2"
+    "@typescript-eslint/parser": ...,
+    "typescript": ...
   }
 }
 ```
