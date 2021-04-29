@@ -56,6 +56,7 @@ git init
   "author": "",
   "license": "ISC",
   "scripts": {
+    "lint": "eslint",
     "buildTsDev": "tsc -p tsconfig.dev.json",
     "buildDev": "npm run buildTsDev",
     "buildTsProd": "tsc -p tsconfig.prod.json",
