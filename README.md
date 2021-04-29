@@ -22,6 +22,7 @@ Directory tree after call `npx new-typescript-module`:
 ```plain
 <project-directory>
 ├ package.json
+├ package-lock.json
 ├ README.md
 ├ tsconfig.dev.json
 ├ tsconfig.prod.json
