@@ -2,8 +2,6 @@
 
 * Added to [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) NPM
 * Globally installed [ESLint](https://www.npmjs.com/package/eslint)
-* Globally installed [TypeScript ESLint Parser](https://www.npmjs.com/package/@typescript-eslint/parser)
-* Globally installed [TypeScript](https://www.npmjs.com/package/typescript)
 * Installed [Git](https://git-scm.com/downloads)
   * Added to PATH Git
 
