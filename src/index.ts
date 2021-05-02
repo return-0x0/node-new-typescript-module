@@ -115,6 +115,7 @@ fs.writeFileSync('.npmignore', [
     '.npmignore',
     'node_modules',
     'tsconfig.*.json',
+    'tsconfig.json',
     '.eslintrc'
 ].join(NEW_LINE));
 
