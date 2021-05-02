@@ -102,6 +102,12 @@ fs.writeFileSync('tsconfig.prod.json', [
     '}'
 ].map(line => line.replace(/\t/g, ' '.repeat(4))).join(NEW_LINE));
 
+fs.writeFileSync('tsconfig.json', [
+    '{',
+    '\t"extends": "./tsconfig.dev.json"',
+    '}'
+].map(line => line.replace(/\t/g, ' '.repeat(4))).join(NEW_LINE));
+
 fs.writeFileSync('.npmignore', [
     'src',
     'package-lock.json',
